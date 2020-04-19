@@ -24,4 +24,14 @@ export default createGlobalStyle`
         position: relative;
     }
 
+    a {
+      text-decoration: none;
+      opacity: 0.8;
+      font-family: 'Quicksand', sans-serif;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
 `;
