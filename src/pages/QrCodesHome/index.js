@@ -23,8 +23,6 @@ export default function QrCodesHome() {
           </div>
           <p>Rua Xpto - 8:30</p>
         </Link>
-
-        <Link className="history">Histórico de viagens</Link>
       </article>
       <Menu active="qr-codes" />
     </Container>

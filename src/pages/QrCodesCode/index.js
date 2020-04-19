@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineQrcode } from "react-icons/ai";
 
 import Menu from "../../components/Menu";
 
