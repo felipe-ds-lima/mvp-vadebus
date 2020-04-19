@@ -12,6 +12,11 @@ export const Container = styled.div`
     font-size: 12px;
   }
 
+  .arrow-left {
+    transform: translateY(25%);
+    margin-right: 8px;
+  }
+
   .new-account {
     position: absolute;
     bottom: 16px;

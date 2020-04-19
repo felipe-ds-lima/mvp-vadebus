@@ -34,4 +34,8 @@ export default createGlobalStyle`
       }
     }
 
+    .fluid {
+      width: 100%;
+    }
+
 `;
