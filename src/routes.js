@@ -8,6 +8,7 @@ import PartidaHome from "./pages/PartidaHome";
 import PartidaLinha from "./pages/PartidaLinha";
 import DescidaHome from "./pages/DescidaHome";
 import PartidaHorario from "./pages/PartidaHorario";
+import PartidaPagamento from "./pages/PartidaPagamento";
 
 export default function Routes() {
   return (
@@ -19,6 +20,7 @@ export default function Routes() {
       <Route path="/partida/linha" component={PartidaLinha} />
       <Route path="/descida" component={DescidaHome} />
       <Route path="/partida/horario" component={PartidaHorario} />
+      <Route path="/partida/pagamento" component={PartidaPagamento} />
     </Switch>
   );
 }

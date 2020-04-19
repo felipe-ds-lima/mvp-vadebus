@@ -118,6 +118,7 @@ export const ModalContent = styled.section`
   position: relative;
 
   h3 {
+    text-align: center;
     margin-bottom: 16px;
   }
 
@@ -132,22 +133,43 @@ export const ModalContent = styled.section`
   }
 `;
 
-export const HoursList = styled.section`
+export const PaymentList = styled.section`
   z-index: 1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   max-height: 270px;
   overflow-y: auto;
+  width: 100%;
 
   button {
     color: #333;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: bold;
     background: none;
     border: none;
     padding: 16px;
-    width: 50%;
+    width: 100%;
+
+    p {
+      margin: none;
+      font-size: 20px;
+    }
+
+    div {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-right: 8px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 `;
