@@ -27,7 +27,7 @@ export default function DescidaHome() {
           </div>
         </button>
 
-        <h2>Rua Xpto, Nº 123</h2>
+        <h2>Escolha o ponto de descida</h2>
 
         <div>
           <FaStar />
