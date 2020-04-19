@@ -1,5 +1,6 @@
 import React from "react";
-import { TiWarningOutline, TiStar, TiLocation } from "react-icons/ti";
+import { TiWarningOutline } from "react-icons/ti";
+import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
 
 import { Container, MapSection, Message, Spots } from "./styles";
 import Map from "../../components/Map";
@@ -27,7 +28,7 @@ export default function PartidaHome() {
       <Spots>
         <Link to="/partida/linha">
           <div className="circle star">
-            <TiStar />
+            <FaStar />
           </div>
           <div>
             <h3>Rua ABC 1, Nº 111</h3>
@@ -36,7 +37,7 @@ export default function PartidaHome() {
         </Link>
         <Link to="/partida/linha">
           <div className="circle">
-            <TiLocation />
+            <FaMapMarkerAlt />
           </div>
           <div>
             <h3>Rua ABC 1, Nº 111</h3>
@@ -45,7 +46,7 @@ export default function PartidaHome() {
         </Link>
         <Link to="/partida/linha">
           <div className="circle">
-            <TiLocation />
+            <FaMapMarkerAlt />
           </div>
           <div>
             <h3>Rua ABC 1, Nº 111</h3>
@@ -54,7 +55,7 @@ export default function PartidaHome() {
         </Link>
         <Link to="/partida/linha">
           <div className="circle">
-            <TiLocation />
+            <FaMapMarkerAlt />
           </div>
           <div>
             <h3>Rua ABC 1, Nº 111</h3>

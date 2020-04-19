@@ -58,7 +58,7 @@ export const Spots = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 40px;
+      font-size: 32px;
       color: #f8f7fd;
       background-color: #c4c4c4;
 
