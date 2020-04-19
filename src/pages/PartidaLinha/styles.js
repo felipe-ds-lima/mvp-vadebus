@@ -14,6 +14,16 @@ export const Header = styled.section`
   justify-content: space-between;
   align-items: center;
 
+  button {
+    background: none;
+    border: none;
+  }
+
+  h2 {
+    color: #f8f7fd;
+    font-size: 20px;
+  }
+
   div {
     height: 56px;
     width: 56px;
@@ -37,9 +47,20 @@ export const LineList = styled.section`
   flex-direction: column;
   padding: 16px;
   background-color: #f8f7fd;
+  color: #444;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
 
   a {
     display: flex;
+    margin-top: 8px;
+    color: #444;
 
     div {
       margin-right: 8px;

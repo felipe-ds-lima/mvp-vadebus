@@ -8,27 +8,39 @@ import Menu from "../../components/Menu";
 import busIcon from "../../assets/bus-icon.svg";
 
 import { Container, Header, LineList } from "./styles";
+import history from "../../services/history";
 
 export default function PartidaLinha() {
+  function handleBack() {
+    history.goBack();
+  }
+
   return (
     <Container>
       <Header>
-        <div>
-          <IoIosArrowBack />
-          <p>voltar</p>
-        </div>
+        <button type="button" onClick={handleBack}>
+          <div>
+            <IoIosArrowBack />
+            <p>voltar</p>
+          </div>
+        </button>
+
+        <h2>Rua Xpto, Nº 123</h2>
+
         <div>
           <FaStar />
         </div>
       </Header>
 
       <LineList>
+        <h2>Linhas que passam neste ponto</h2>
+        <h3>Escolha uma:</h3>
         <Link to="/descida">
           <div>
             <img src={busIcon} alt="Ônibus" />
           </div>
           <div>
-            <h3>101</h3>
+            <h4>101</h4>
             <p>Centro de xpto</p>
           </div>
         </Link>
@@ -37,7 +49,7 @@ export default function PartidaLinha() {
             <img src={busIcon} alt="Ônibus" />
           </div>
           <div>
-            <h3>102</h3>
+            <h4>102</h4>
             <p>Centro de xpto</p>
           </div>
         </Link>
@@ -46,7 +58,7 @@ export default function PartidaLinha() {
             <img src={busIcon} alt="Ônibus" />
           </div>
           <div>
-            <h3>103</h3>
+            <h4>103</h4>
             <p>Centro de xpto</p>
           </div>
         </Link>
