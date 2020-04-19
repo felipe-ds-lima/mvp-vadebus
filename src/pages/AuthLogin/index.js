@@ -1,14 +1,16 @@
 import React from "react";
 import { Form, Input } from "@rocketseat/unform";
+import { Link } from "react-router-dom";
+
+import history from "../../services/history";
 
 import logo from "../../assets/logo.svg";
 
 import { Container } from "./styles";
-import { Link } from "react-router-dom";
 
 export default function AuthLogin() {
   function handleSubmit(data) {
-    console.dir(data);
+    history.push("/partida");
   }
   return (
     <Container>

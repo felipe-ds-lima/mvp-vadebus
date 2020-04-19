@@ -8,9 +8,7 @@ import { Container } from "./styles";
 import { Link } from "react-router-dom";
 
 export default function AuthPassword() {
-  function handleSubmit(data) {
-    console.dir(data);
-  }
+  function handleSubmit(data) {}
 
   return (
     <Container>
