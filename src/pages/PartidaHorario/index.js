@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack, IoIosClose } from "react-icons/io";
 
 import history from "../../services/history";
 
@@ -21,7 +21,7 @@ import {
 
 export default function PartidaHorario() {
   function handleMarkerClick() {
-    history.push("/partida/horario");
+    history.push("/partida/pagamento");
   }
 
   function handleBack() {
@@ -33,46 +33,125 @@ export default function PartidaHorario() {
       <Modal>
         <Background />
         <ModalContent>
+          <button className="close">
+            <IoIosClose />
+          </button>
           <h3>Escolher um horário</h3>
           <HoursList>
-            <button>5:00</button>
-            <button>5:30</button>
-            <button>6:00</button>
-            <button>6:30</button>
-            <button>7:00</button>
-            <button>7:30</button>
-            <button>8:00</button>
-            <button>8:30</button>
-            <button>9:00</button>
-            <button>9:30</button>
-            <button>10:00</button>
-            <button>10:30</button>
-            <button>11:00</button>
-            <button>11:30</button>
-            <button>12:00</button>
-            <button>12:30</button>
-            <button>13:00</button>
-            <button>13:30</button>
-            <button>14:00</button>
-            <button>14:30</button>
-            <button>15:00</button>
-            <button>15:30</button>
-            <button>16:00</button>
-            <button>16:30</button>
-            <button>17:00</button>
-            <button>17:30</button>
-            <button>18:00</button>
-            <button>18:30</button>
-            <button>19:00</button>
-            <button>19:30</button>
-            <button>20:00</button>
-            <button>20:30</button>
-            <button>21:00</button>
-            <button>21:30</button>
-            <button>22:00</button>
-            <button>22:30</button>
-            <button>23:00</button>
-            <button>23:30</button>
+            <button type="button" onClick={handleMarkerClick}>
+              5:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              5:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              6:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              6:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              7:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              7:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              8:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              8:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              9:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              9:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              10:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              10:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              11:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              11:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              12:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              12:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              13:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              13:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              14:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              14:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              15:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              15:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              16:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              16:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              17:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              17:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              18:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              18:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              19:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              19:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              20:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              20:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              21:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              21:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              22:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              22:30
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              23:00
+            </button>
+            <button type="button" onClick={handleMarkerClick}>
+              23:30
+            </button>
           </HoursList>
         </ModalContent>
       </Modal>

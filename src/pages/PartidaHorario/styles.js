@@ -115,9 +115,20 @@ export const ModalContent = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   h3 {
     margin-bottom: 16px;
+  }
+
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 32px;
+    height: 32px;
+    background: none;
+    border: none;
   }
 `;
 
