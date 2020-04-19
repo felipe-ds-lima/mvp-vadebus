@@ -10,6 +10,8 @@ import DescidaHome from "./pages/DescidaHome";
 import PartidaHorario from "./pages/PartidaHorario";
 import PartidaPagamento from "./pages/PartidaPagamento";
 import PartidaConfirmation from "./pages/PartidaConfirmation";
+import QrCodesHome from "./pages/QrCodesHome";
+import QrCodesCode from "./pages/QrCodesCode";
 
 export default function Routes() {
   return (
@@ -23,6 +25,9 @@ export default function Routes() {
       <Route path="/partida/horario" component={PartidaHorario} />
       <Route path="/partida/pagamento" component={PartidaPagamento} />
       <Route path="/partida/confirmacao" component={PartidaConfirmation} />
+
+      <Route path="/qr-codes" exact component={QrCodesHome} />
+      <Route path="/qr-codes/qr-code" exact component={QrCodesCode} />
     </Switch>
   );
 }
